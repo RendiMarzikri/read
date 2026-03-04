@@ -1,0 +1,140 @@
+/* ====================================
+   RENDI-MARZIKRI.CSS - Public Universal CDN
+==================================== */
+
+/* ===============================
+   CONTAINER
+================================= */
+.z-container {
+  width: 90%;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===============================
+   FLEX SYSTEM
+================================= */
+.z-flex { display: flex; }
+.z-flex-center { display: flex; justify-content: center; align-items: center; }
+.z-flex-between { display: flex; justify-content: space-between; align-items: center; }
+.z-flex-column { display: flex; flex-direction: column; }
+
+/* ===============================
+   GRID SYSTEM
+================================= */
+.z-grid { display: grid; gap: 20px; }
+.z-grid-2 { grid-template-columns: repeat(2, 1fr); }
+.z-grid-3 { grid-template-columns: repeat(3, 1fr); }
+.z-grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+/* ===============================
+   CARD
+================================= */
+.z-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.z-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* ===============================
+   BUTTON
+================================= */
+.z-btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.z-btn-primary {
+  background: #007bff;
+  color: white;
+}
+
+.z-btn-primary:hover {
+  background: #0056b3;
+}
+
+.z-btn-dark {
+  background: #222;
+  color: white;
+}
+
+.z-btn-dark:hover {
+  background: #000;
+}
+
+/* ===============================
+   TEXT
+================================= */
+.z-text-center { text-align: center; }
+.z-text-right { text-align: right; }
+.z-text-muted { color: #777; }
+
+.z-fs-1 { font-size: 32px; }
+.z-fs-2 { font-size: 24px; }
+.z-fs-3 { font-size: 18px; }
+
+/* ===============================
+   SPACING
+================================= */
+.z-mt-1 { margin-top: 10px; }
+.z-mt-2 { margin-top: 20px; }
+.z-mt-3 { margin-top: 30px; }
+
+.z-p-1 { padding: 10px; }
+.z-p-2 { padding: 20px; }
+.z-p-3 { padding: 30px; }
+
+/* ===============================
+   NAVBAR
+================================= */
+.z-navbar {
+  background: #111;
+  color: white;
+  padding: 15px;
+}
+
+.z-navbar a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.z-navbar a:hover {
+  text-decoration: underline;
+}
+
+/* ===============================
+   FOOTER
+================================= */
+.z-footer {
+  background: #111;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* ===============================
+   ANIMATION
+================================= */
+.z-fade-in {
+  animation: zFadeIn 1s ease forwards;
+}
+
+@keyframes zFadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
