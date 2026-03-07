@@ -8,6 +8,16 @@ const webcontent = [
         <a href="/read/read/article" class="z-btn z-btn-primary z-mt-2">記事</a>
       </div>
     </div>`
+  },
+  {
+    "content": `
+    <div class="z-container z-mt-3">
+      <div class="z-card z-fade-in">
+        <h2 class="z-fs-2">ブログを読む</h2>
+        <p class="z-text-muted z-mt-1">ブログを読むには下のボタンを押してください。</p>
+        <a href="/read/read/blog" class="z-btn z-btn-primary z-mt-2">ブログ</a>
+      </div>
+    </div>`
   }
 ];
 render_text(webcontent, "content");
